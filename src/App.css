@@ -1,0 +1,256 @@
+*{
+  font-family: 'Merriweather', serif;
+  background-color: rgba(209, 222, 255, 0.345);
+}
+
+a{
+  color: black !important;
+}
+
+/* Landscape View */
+@media screen and (orientation: landscape) {
+  .sitename {
+    font-size: 30px !important;
+  }
+}
+
+/* Portrait View */
+@media screen and (orientation: portrait) {
+  .sitename {
+    font-size: 20px !important;
+  }
+}
+
+
+.mycard{
+  margin-top: 80px;
+}
+
+.auth-card{
+  padding: 25px;
+  text-align: center;
+  max-width: 400px;
+  margin: 25px auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+}
+
+/* Landscape view */
+@media (orientation: landscape) {
+  .image-container {
+    margin-left: 400px;
+  }
+}
+
+/* Portrait view */
+@media (orientation: portrait) {
+  .image-container {
+    margin-left: 50px;
+  }
+}
+
+
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #527aff !important;
+  box-shadow: 0 1px 0 0  #527aff !important;
+}
+
+.input-field input[type=Number]:focus {
+  border-bottom: 1px solid #527aff !important;
+  box-shadow: 0 1px 0 0  #527aff !important;
+}
+
+.ptag{
+  background-color: azure;
+}
+
+.inputbox{
+  align-items: center;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two equal columns */
+  gap: 10px; /* Gap between columns */
+  padding: 10px;
+  border: 1px solid #7c7b7b61;
+  border-radius: 5px;
+  text-align: start;
+}
+
+
+/* Landscape view */
+@media (orientation: landscape) {
+  .locationtitle{
+    background-color: rgba(255, 255, 255, 0.527);
+    color: black !important;
+  }
+  
+}
+
+/* Portrait view */
+@media (orientation: portrait) {
+  .locationtitle{
+    background-color: rgba(255, 255, 255, 0.527);
+    color: black !important;
+  }
+  
+}
+
+.gallery{
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (orientation: landscape) {
+  .home-card {
+   padding: 20px;
+   max-width: 60%;
+   margin: 35px auto;
+  }
+}
+
+/* Portrait view */
+@media (orientation: portrait) {
+  .home-card {
+   padding: 10px;
+   max-width: 90%;
+   margin: 20px auto;
+  }
+}
+
+.hgh{
+color: #527aff;
+}
+
+input::placeholder {
+  color: rgb(33, 32, 32); /* Set the text color to black */
+}
+
+
+
+/* Landscape view */
+@media (orientation: landscape) {
+  #toast-container {
+    top: 30px !important;
+    right: 20px !important;
+    left: auto !important;
+    height: 30px !important; /* Adjust the height for landscape */
+  }
+}
+
+/* Portrait view */
+@media (orientation: portrait) {
+  #toast-container {
+    top: 45px !important;
+    left: auto !important;
+    height: 20px !important; /* Adjust the height for portrait */
+  }
+}
+
+
+.cardcontent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 10px; /* Gap between columns */
+  padding: 10px;
+  border: 1px solid #7c7b7b61;
+  border-radius: 5px;
+  text-align: start;
+  
+}
+
+.cardcontent h6 {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for landscape view */
+  width: 50%; /* 50% of the screen width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Media query for portrait view (screen width < screen height) */
+@media (orientation: portrait) {
+  .center-card {
+    width: 100%; /* 90% of the screen width */
+  }
+}
+
+
+/* App.css */
+/* .navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed */
+
+
+  .likecount{
+    background-color: transparent;
+    color: rgb(73, 100, 255) !important;
+    font-size: 20px;
+}
+
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust this value for spacing */
+}
+
+.no-button-style {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.deleteicon{
+  color: rgba(255, 29, 29, 0.847);
+  background-color: transparent;
+}
+
+
+
+.editbutton{
+  margin-top: 90px;
+}
+
+
+
+
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px; /* Adjust the size of the profile picture as needed */
+  height: 40px; /* Adjust the size of the profile picture as needed */
+  border-radius: 50%; /* Makes the profile picture round */
+  margin-right: 10px; /* Add some space between the picture and username */
+}
